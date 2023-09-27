@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Ubuntu+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Ubuntu-Title;
+    src: url("fonts/UbuntuMono-Regular.ttf");
+}
+
+html {
+    font-size: 56%;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: black url("cover.jpg") no-repeat center center/cover;
+    z-index: -1000;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: -1000;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.6rem 13.3rem 0 0;
+}
+
+.fa-bars {
+    font-size: 4.5rem;
+    display: none;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 3.6rem;
+}
+
+.navbar li a {
+    position: relative;
+    font-family: "Ubuntu-Title";
+    color: #fff;
+    font-size: 3.4rem;
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+}
+
+.navbar li a::after {
+    content: " ";
+    position: absolute;
+    bottom: -2.3px;
+    left: 50%;
+    height: 4px;
+    width: 0%;
+    transform: translateX(-50%);
+    background: rgb(24, 240, 240);
+    border-radius: 50px;
+    transition: all .4s ease-out;
+}

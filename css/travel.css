@@ -1,0 +1,73 @@
+.navbar li a:hover::after {
+    width: 50%;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main .title {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 32rem;
+}
+
+main .subtitle {
+    font-family: "Ubuntu-Title";
+    font-size: 6rem;
+}
+
+main a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+button {
+    padding: 2rem 3.4rem;
+    background: rgb(24, 240, 240);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+@media (max-width:760px) {
+    html {
+        font-size: 40%;
+    }
+
+
+    .navbar {
+        padding: 2.2rem 2.4rem 0 0;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        top: 55%;
+    }
+
+    .subtitle {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width:480px) {
+    html {
+        font-size: 36%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+}
